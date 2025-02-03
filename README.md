@@ -3,7 +3,6 @@
 ## Table of Contents
 - Project Overview
 - Technology Stack
-- Installation
 - Dataset Details
 - Project Workflow
 - Model Results
@@ -30,46 +29,39 @@ Pandas, NumPy, Matplotlib, Seaborn
 Tools: Databricks, Jupyter Notebook,PowerBI
 Techniques: SMOTE, Feature Engineering, Model Tuning
 
-## Installation:
-
-Download the files from the zip and save the files into your local machine.
-You need to have a compatible software to execute the R and Python files. (We used R studio and Databricks for Python)
-Import the files into respective software's and execute them.
-
 ## Dataset Details:
 
 Dataset Name: BankSim Dataset 
 Source : https://www.kaggle.com/ntnu-testimon/banksim1
 * Size: 76.2 MB (594642 rows, 17 columns)
 * Features: The dataset has 16 feature columns and a target column. The feature columms are :
-Step: This feature represents the day from the start of simulation. It has 180 steps so simulation ran for virtually 6 months.
-Customer: This feature represents the customer id
-zipCodeOrigin: The zip code of origin/source.
-Merchant: The merchant's id
-zipMerchant: The merchant's zip code
-Age: Categorized age
-0: <= 18,
+- Step: This feature represents the day from the start of simulation. It has 180 steps so simulation ran for virtually 6 months.
+- Customer: This feature represents the customer id
+- zipCodeOrigin: The zip code of origin/source.
+- Merchant: The merchant's id
+- zipMerchant: The merchant's zip code
+- Age: Categorized age
+(0: <= 18,
 1: 19-25,
 2: 26-35,
 3: 36-45,
 4: 46:55,
 5: 56:65,
 6: > 65
-U: Unknown
-Gender: Gender for customer
-E : Enterprise,
-F: Female,
+U: Unknown)
+- Gender: Gender for customer
+(F: Female,
 M: Male,
-U: Unknown
-Category: Category of the purchase. 
-Amount: Amount of the purchase
-Transaction_frequency: Number of transactions per customer Avg_transaction_amt: Average amount transacted per customer
-Time_of_day: Representative of time for each transaction-inferred from the 'step' variable 
-Merchant_interaction: Numerical count
-Amount_change_pct: The percentage change in transaction amount from the customer's previous transaction.
-Zip_distance: The absolute difference between the customer's zip code and that of the merchant 
-Category_count: Number of transactions each customer has made within a particular category 
-Fraud: Target variable which shows if the transaction fraudulent(1) or benign(0)
+U: Unknown)
+- Category: Category of the purchase. 
+- Amount: Amount of the purchase
+- Transaction_frequency: Number of transactions per customer Avg_transaction_amt: Average amount transacted per customer
+- Time_of_day: Representative of time for each transaction-inferred from the 'step' variable 
+- Merchant_interaction: Numerical count
+- Amount_change_pct: The percentage change in transaction amount from the customer's previous transaction.
+- Zip_distance: The absolute difference between the customer's zip code and that of the merchant 
+- Category_count: Number of transactions each customer has made within a particular category 
+- Fraud: Target variable which shows if the transaction fraudulent(1) or benign(0)
 
 ## Project Workflow
 
